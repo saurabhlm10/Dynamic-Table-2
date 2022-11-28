@@ -83,20 +83,20 @@ const TableComponent = ({ data, tableConfig }) => {
           <tr key={id} style={{
             backgroundColor: `${id % 2 === 0 ? '#ffffff' : '#F5F5F5'}`
           }}>
-            <td style={{ display: `${tableConfig.name}` }} className='name'>
+            <td style={{ display: `${tableConfig.name}` }}>
               <div>
                 <img src={Profile} alt="profile" />
                 {data?.person?.name}
               </div>
             </td>
-            <td style={{ display: `${tableConfig.city}` }} className='city'>{data.city}</td>
-            <td style={{ display: `${tableConfig.email}` }} className='email'>
+            <td style={{ display: `${tableConfig.city}` }} >{data.city}</td>
+            <td style={{ display: `${tableConfig.email}` }}>
               <a href="https://www.google.com" target='_blank' rel="noreferrer" >
                 {data.email}
               </a>
             </td>
-            <td style={{ display: `${tableConfig.joiningDate}` }} className='joiningDate'>{data.joiningDate}</td>
-            <td style={{ display: `${tableConfig.role}` }} className='role'>{data.role}</td>
+            <td style={{ display: `${tableConfig.joiningDate}` }} >{data.joiningDate}</td>
+            <td style={{ display: `${tableConfig.role}` }}>{data.role}</td>
           </tr>
         ))}
       </tbody>
